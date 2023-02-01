@@ -2,7 +2,6 @@ name: Artifact
 
 on: [push]
 
-
 env:
   ARTIFACT_NAME: myartifact
   
@@ -12,6 +11,7 @@ jobs:
  steps:
  - name:check out the code
    uses:actions/checkout@v1.2
+ - name: Upload the artifact
  - name:actions/upload-artifactory@v1.2
    with:
    name:${{ env.ARTIFACT_NAME }}
