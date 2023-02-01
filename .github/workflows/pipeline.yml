@@ -8,9 +8,7 @@ env:
 jobs:
  main:
  runs on: ubuntu-latest
- steps:
-  jobs:
-  my_first_job:
+ my_first_job:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
