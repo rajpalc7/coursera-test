@@ -11,8 +11,8 @@ jobs:
  runs on: ubuntu-latest
  steps:
  - name:check out the code
-   uses:actions/checkout@v2
- - name:actions/upload-artifactory@v2
+   uses:actions/checkout@v1.2
+ - name:actions/upload-artifactory@v1.2
    with:
    name:${{ env.ARTIFACT_NAME }}
    path: .
